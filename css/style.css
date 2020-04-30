@@ -1,0 +1,109 @@
+.debug .centratore {
+  border: 1px solid red;
+  min-height: 30px;
+  background-color: lightgrey;
+}
+/* fine debug */
+
+/* RESET */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* FINE RESET */
+
+/* REGOLE GENERALI */
+.testa, .corpo, .piede {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #39587e;
+}
+.grassetto {
+  font-weight: bold;
+}
+.centratore {
+  width: 1410px;
+  margin: auto;
+}
+.centro {
+  text-align: center;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.align-center {
+  text-align: center;
+}
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+.inline-list > li {
+  display: inline-block;
+}
+ol, ul {
+	list-style: none;
+}
+/* FINE REGOLE GENERALI */
+
+
+
+.corpo .jumbotron {
+  background-color: lightgrey; /*debug*/
+}
+.corpo .jumbotron .centratore {
+  padding: 0 150px;
+}
+.corpo .centratore [class^="float-"] {
+  width: 33%;
+  border: solid blue 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fine */
