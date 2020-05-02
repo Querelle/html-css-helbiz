@@ -132,7 +132,6 @@ ol, ul {
 .steps .centratore [class^="float-"] {
   width: 33%;
   height: 300px;
-  border: solid 1px blue; /*debug*/
 }
 .steps img {
   width: 400px;
@@ -142,7 +141,15 @@ ol, ul {
   display: block;
   transform: translateX(-50%);
 }
-
+.steps .centratore div:nth-of-type(2n+1) {
+  padding-top: 60px;
+}
+.question {
+  font-size: 1.5em;
+}
+.answere p:last-child {
+  padding-top: 20px;
+}
 
 
 
