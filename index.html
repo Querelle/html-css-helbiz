@@ -14,9 +14,12 @@
       <!-- barra di navigazione centrata-->
       <nav class="centratore piccolo clearfix">
         <img class="logo float-left" src="img/logo.svg" alt="logo">
+        <div class="hamburger-menu float-right">
+          <i class="fas fa-bars"></i>
+        </div>
 
         <!-- menu -->
-        <ul class="quick-menu float-right inline-list">
+        <ul class="menu quick-menu float-right inline-list">
           <li>HELBIZGO</li>
           <li>HELBIZBIKE</li>
           <li>COVID-19</li>
@@ -24,7 +27,7 @@
           <li>ABOUT</li>
           <li>SHOP</li>
           <li>
-            <ul class="language-menu inline-list">
+            <ul class="menu language-menu inline-list">
               <li>ENG</li>
               <li>ITA</li>
               <li>ES</li>
@@ -50,38 +53,43 @@
       <div class="centratore clearfix">
 
         <!-- e-scooter banner -->
-        <div class="e-service e-scooter align-center float-left">
-          <img src="img/logogo.svg" class="logo" alt="">
-          <p>Seamless E-Scooter sharing globally.</p>
-          <a href="#" class="link">Learn More &rsaquo;</i></a>
-          <img src="img/scooter.jpg" alt="scooter elettrico">
+        <div class="col-sx col-lg-6 col-md-12 col-xs-12">
+          <div class="e-service e-scooter align-center">
+            <img src="img/logogo.svg" class="logo" alt="">
+            <p>Seamless E-Scooter sharing globally.</p>
+            <a href="#" class="link">Learn More &rsaquo;</i></a>
+            <img src="img/scooter.jpg" alt="scooter elettrico">
+          </div>
         </div>
 
         <!-- e-bike banner -->
-        <div class="e-service e-bike align-center float-left">
-          <img src="img/logobike.svg" class="logo" alt="">
-          <p>Next generation of electric city bikes.</p>
-          <a href="#" class="link">Learn More &rsaquo;</i></a>
-          <img src="img/bike.jpg" alt="bike elettrica">
+        <div class="col-dx col-lg-6 col-md-12 col-xs-12">
+          <div class="e-service e-bike align-center">
+            <img src="img/logobike.svg" class="logo" alt="">
+            <p>Next generation of electric city bikes.</p>
+            <a href="#" class="link">Learn More &rsaquo;</i></a>
+            <img src="img/bike.jpg" alt="bike elettrica">
+          </div>
         </div>
+
       </div>
 
       <!-- steps -->
       <div class="steps">
         <div class="banner">
-          &nbsp;
+          <div class="centratore piccolo clearfix">
+            <div class="interazione float-left question grassetto col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-4">
+              <span>How does Helbiz work?</span>
+            </div>
+            <div class="interazione immagine float-left">
+              <img src="img/iphone.png" alt="smartphone">
+            </div>
+            <div class="interazione float-left answere col-md-4 col-xs-4">
+              <p class="grassetto">Step 1</p>
+              <p>Leave curbside when finished</p>
+            </div>
         </div>
-        <div class="centratore piccolo clearfix">
-          <div class="interazione float-left question grassetto">
-            <span>How does Helbiz work?</span>
-          </div>
-          <div class="interazione float-left">
-            <img src="img/iphone.png" alt="smartphone">
-          </div>
-          <div class="interazione float-left answere">
-            <p class="grassetto">Step 1</p>
-            <p>Leave curbside when finished</p>
-          </div>
+
         </div>
       </div>
 
@@ -89,7 +97,7 @@
       <div class="smart-app centratore clearfix">
 
         <div class="smart-mobility">
-          <div class="text mobility float-right">
+          <div class="text mobility col-lg-2 col-lg-offset-8 col-md-offset-3 col-md-6 col-xs-offset-3 col-xs-6">
             <p class="grassetto">Smart mobility on two wheels</p>
             <p>A cleaner and more convenient
               alternative to get around your city</p>
@@ -97,20 +105,23 @@
           </div>
         </div>
 
-        <div class="get-app align-center float-left">
-          <div class="text get">
-            <p class="grassetto">Get the app. </p>
-            <p class="grassetto">Ride Today</p>
-            <a href="#" class="link">iOS &rsaquo;</i></a>
-            <a href="#" class="link">Android &rsaquo;</i></a>
+        <div class="col-lg-6 col-md-12 col-xs-12">
+          <div class="get-app align-center">
+            <div class="text get">
+              <p class="grassetto">Get the app. </p>
+              <p class="grassetto">Ride Today</p>
+              <a href="#" class="link">iOS &rsaquo;</i></a>
+              <a href="#" class="link">Android &rsaquo;</i></a>
+            </div>
           </div>
-
         </div>
 
-        <div class="find-us align-center float-left">
-          <div class="text find">
-            <p class="grassetto">Find us around <br>the globe</p>
-            <a href="#" class="link">Our cities &rsaquo;</i></a>
+        <div class="col-lg-6 col-md-12 col-xs-12">
+          <div class="find-us align-center">
+            <div class="text find">
+              <p class="grassetto">Find us around <br>the globe</p>
+              <a href="#" class="link">Our cities &rsaquo;</i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -133,65 +144,82 @@
     <footer class="piede">
 
       <div class="centratore piccolo clearfix">
-        <div class="col float-left">
-          <img src="img/logowhite.svg" class="logo " alt="logo">
-        </div>
-        <div class="col nav product float-left">
-          <h5>PRODUCT</h5>
-          <ul>
-            <li>HelbizGO</li>
-            <li>HelbizBIKE</li>
-            <li>Covid-19</li>
-            <li>Mobility Analytics</li>
-          </ul>
+        <div class="col-lg-3">
+          <div>
+            <img src="img/logowhite.svg" class="logo " alt="logo">
+          </div>
         </div>
 
-        <div class="col nav info float-left">
-          <h5>INFO</h5>
-          <ul>
-            <li>About us</li>
-            <li>Company Info</li>
-            <li>Cities</li>
-            <li>Sustainability</li>
-            <li>Franchise</li>
-            <li>Partners</li>
-            <li>Careers</li>
-          </ul>
+        <div class="col-lg-3 col-md-12 col-xs-12">
+          <div class="nav product">
+            <h5>PRODUCT</h5>
+            <ul>
+              <li>HelbizGO</li>
+              <li>HelbizBIKE</li>
+              <li>Covid-19</li>
+              <li>Mobility Analytics</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="col nav helbiz float-left">
-          <h5>HELBIZ</h5>
-          <ul>
-            <li>Contact Us</li>
-            <li>Support</li>
-            <li>Newsroom</li>
-            <li>Media Assets</li>
-            <li>Blog</li>
-          </ul>
+        <div class="col-lg-3 col-md-12 col-xs-12">
+          <div class="nav info">
+            <h5>INFO</h5>
+            <ul>
+              <li>About us</li>
+              <li>Company Info</li>
+              <li>Cities</li>
+              <li>Sustainability</li>
+              <li>Franchise</li>
+              <li>Partners</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-12 col-xs-12">
+          <div class="nav helbiz">
+            <h5>HELBIZ</h5>
+            <ul>
+              <li>Contact Us</li>
+              <li>Support</li>
+              <li>Newsroom</li>
+              <li>Media Assets</li>
+              <li>Blog</li>
+            </ul>
+          </div>
         </div>
 
         <hr>
 
-        <div class="col nav social float-left">
-          <ul class="inline-list">
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
-            <li><i class="fab fa-linkedin-in"></i></li>
-          </ul>
+        <div class="col-lg-3 col-md-12 col-xs-12">
+          <div class="nav social">
+            <ul class="inline-list">
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-facebook-f"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-youtube"></i></li>
+              <li><i class="fab fa-linkedin-in"></i></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="col float-left">
-          <span>Terms & Conditions</span>
+        <div class="termini col-lg-3 col-md-12 col-xs-12">
+          <div>
+            <span>Terms & Conditions</span>
+          </div>
         </div>
 
-        <div class="col float-left">
-          <span>Press & News</span>
+        <div class="termini col-lg-3 col-md-12 col-xs-12">
+          <div>
+            <span>Press & News</span>
+          </div>
         </div>
 
-        <div class="col float-left">
-          <span>2020 Helbiz</span>
+        <div class="termini col-lg-3 col-md-12 col-xs-12">
+          <div>
+            <span>2020 Helbiz</span>
+          </div>
         </div>
 
         <hr>

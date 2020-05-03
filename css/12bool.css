@@ -22,7 +22,7 @@
 
 /* riga */
 .container {
-  max-width: 1110px;
+  max-width: 1410px;
   margin: auto;
 }
 .container::after {

@@ -14,11 +14,12 @@ body {
   color: #212529;
 }
 .centratore {
-  width: 1410px;
+  max-width: 1410px;
+  width: 100%;
   margin: auto;
 }
 .centratore.piccolo {
-  width: 1110px;
+  max-width: 1110px;
 }
 .grassetto {
   font-weight: bold;
@@ -71,6 +72,9 @@ ol, ul {
 .language-menu li:nth-of-type(1n + 2) {
   border-left: solid 1px #ccc;
 }
+.hamburger-menu {
+  display: none;
+}
 
 /* jumbotron */
 .testa .jumbotron {
@@ -97,11 +101,18 @@ ol, ul {
 /* CORPO */
 /* e-service */
 .corpo .centratore:first-of-type {
-  margin-top: 80px;
+  /* margin-top: 80px; */
+}
+
+.col-sx {
+  padding-right: 20px;
+}
+.col-dx {
+  padding-left: 20px;
 }
 .e-service {
   background-color: #fafafa;
-  width: 685px;
+  width: 100%;
   padding: 50px;
 }
 .e-service > * {
@@ -120,9 +131,6 @@ ol, ul {
   transform: translateX(-50%);
   width: 429px;
 }
-.e-bike {
-  margin-left: 40px;
-}
 
 /* steps */
 .banner {
@@ -130,6 +138,11 @@ ol, ul {
   background-size: cover;
   height: 500px;
   margin-top: 80px;
+  margin-bottom: 300px;
+}
+.banner .centratore {
+  position: relative;
+  bottom: -480px;
 }
 .steps .interazione {
   width: calc(100% / 3);
@@ -153,17 +166,15 @@ ol, ul {
   padding-top: 20px;
 }
 
-/* smart mobility */
+/* smart services */
 .smart-mobility {
   background-image: url(../img/smartmob.jpg);
   background-size: cover;
   height: 500px;
-  width: 100%;
 }
 .smart-mobility .text {
   text-align: center;
-  width: 40%;
-  padding: 150px 200px 0 100px;
+  padding-top: 100px;
   color: #FFF;
 }
 .smart-app .text p.grassetto {
@@ -178,7 +189,6 @@ ol, ul {
 }
 .get-app,
 .find-us {
-  width: 685px;
   padding: 50px;
   margin-top: 40px;
 }
@@ -190,18 +200,18 @@ ol, ul {
 .find-us {
   background-image: url(../img/city.jpg);
   background-size: cover;
-  margin-left: 40px;
+  margin-left: 18px;
   height: 800px;
 }
 .get-app {
-  position: relative;
   background-image: url(../img/iphonebg.png), linear-gradient(#405569, #242e37);
   background-repeat: no-repeat;
   background-position: bottom, center;
   height: 800px;
+  margin-right: 20px;
 }
 .get-app a {
-  padding-right: 20px;
+  padding-right: 18px;
 }
 
 /* social banner */
@@ -234,9 +244,6 @@ ol, ul {
   color: #FFF;
   font-size: .7em;
 }
-.piede .col {
-  width: calc(100% / 4);
-}
 
 /* fotter superiore */
 .piede .logo {
@@ -249,6 +256,7 @@ ol, ul {
   padding-bottom: 15px;
   color: #A2AEC6;
 }
+
 /* footer centrale */
 .piede hr {
   color: #1a1a1a;
@@ -259,9 +267,11 @@ ol, ul {
 .piede hr:last-of-type {
   margin: 90px 0 32px 0;
 }
-.col.social ul > li {
+.nav.social ul > li {
   padding-left: 20px;
+  color: #FFF;
  }
+
 /* footer inferiore */
 .piede .app img {
   width: 104px;
@@ -275,17 +285,46 @@ ol, ul {
 }
 
 
+@media all and (max-width: 991px){
+  /* testa */
+  .menu {
+    display: none;
+  }
+  .testa .logo {
+    margin-left: 50px;
+    width: 180px;
+  }
+  .hamburger-menu {
+    display: inline-block;
+    font-size: 25px;
+    padding-right: 50px;
+  }
 
+  /* main */
+  .col-sx,
+  .col-dx {
+    padding: 20px 20px 0 20px;
+  }
+  .steps .immagine {
+    display: none;
+  }
+  .smart-mobility,
+  .get-app,
+  .find-us {
+    margin: 20px 20px 0 20px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-/* Fine */
+  /* footer */
+  .piede {
+    text-align: center;
+  }
+  .piede .nav {
+    padding-top: 30px;
+  }
+  .nav.social ul > li {
+    padding-right: 20px;
+  }
+  .termini {
+    padding-bottom:20px;
+  }
+}
