@@ -6,16 +6,19 @@
 }
 /* FINE RESET */
 
-/* REGOLE GENERALI */
+/* REGOLE GENERALI e FONT*/
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 21px;
-  color: #39587e;
+  color: #212529;
 }
 .centratore {
   width: 1410px;
   margin: auto;
+}
+.centratore.piccolo {
+  width: 1110px;
 }
 .grassetto {
   font-weight: bold;
@@ -40,16 +43,23 @@ body {
 ol, ul {
 	list-style: none;
 }
+.link {
+  text-decoration: none;
+  color: #FFF;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
 /* FINE REGOLE GENERALI */
 
-/* TESTA */
+/* HEADER */
 /* navigation bar */
 .testa .centratore {
-  width: 1110px;
   padding: 25px 0;
   font-size: .5em;
 }
-.testa img {
+.testa .logo {
   width: 80px;
 }
 .quick-menu > li {
@@ -68,48 +78,50 @@ ol, ul {
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
 }
-.shared {
+.shared-mobility {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #FFF;
 }
-.shared p {
+.shared-mobility p {
   font-size: 0.7em;
 }
-.jumbotron img {
+.shared-mobility img {
   width: 164px;
   padding-top: 20px;
 }
+/* FINE HEADER */
 
 /* CORPO */
 /* e-service */
 .corpo .centratore:first-of-type {
   margin-top: 80px;
 }
-.e-scooter,
-.e-bike {
+.e-service {
   background-color: #fafafa;
   width: 685px;
   padding: 50px;
 }
-.e-bike {
-  margin-left: 40px;
+.e-service > * {
+  margin: 30px 0;
 }
-[class^="e-"] img {
+.e-service .logo {
+  width: 200px;
+}
+.e-service .link {
+  color: #0070cf;
+}
+.e-service img {
   display: block;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   width: 429px;
 }
-[class^="e-"] .grassetto {
-  letter-spacing: 8px;
-  color: #000;
-}
-[class^="e-"] > * {
-  margin: 30px 0;
+.e-bike {
+  margin-left: 40px;
 }
 
 /* steps */
@@ -119,11 +131,8 @@ ol, ul {
   height: 500px;
   margin-top: 80px;
 }
-.steps .centratore {
-  width: 1110px;
-}
-.steps .centratore [class^="float-"] {
-  width: 33%;
+.steps .interazione {
+  width: calc(100% / 3);
   height: 300px;
 }
 .steps img {
@@ -134,7 +143,7 @@ ol, ul {
   display: block;
   transform: translateX(-50%);
 }
-.steps .centratore div:nth-of-type(2n+1) {
+.interazione:nth-of-type(2n+1) {
   padding-top: 60px;
 }
 .question {
@@ -145,9 +154,6 @@ ol, ul {
 }
 
 /* smart mobility */
-.container {
-  max-width: 1410px;
-}
 .smart-mobility {
   background-image: url(../img/smartmob.jpg);
   background-size: cover;
@@ -160,26 +166,15 @@ ol, ul {
   padding: 150px 200px 0 100px;
   color: #FFF;
 }
-.smart-mobility .text p:first-child {
+.smart-app .text p.grassetto {
   font-size: 1.5em;
 }
 .smart-mobility .text *:nth-of-type(1n+2) {
   margin-top: 20px;
 }
-.smart-mobility .text a {
-  display: block;
+.smart-app .text a {
+  display: inline-block;
   margin-top: 20px;
-}
-
-.get-app .col-lg-11 {
-  border: solid 1px red;
-  background-color: blue;
-  height: 500px;
-}
-.find-us .col-lg-11 {
-  background-color: red;
-  border: solid 1px blue;
-  height: 500px;
 }
 .get-app,
 .find-us {
@@ -187,32 +182,29 @@ ol, ul {
   padding: 50px;
   margin-top: 40px;
 }
-
 .text.get, .text.find {
   margin-top: 120px;
   padding: 0 50px;
   color: #FFF;
 }
-
 .find-us {
   background-image: url(../img/city.jpg);
   background-size: cover;
   margin-left: 40px;
   height: 800px;
 }
-
 .get-app {
   position: relative;
-  background-image: linear-gradient(#405569, #242e37);
+  background-image: url(../img/iphonebg.png), linear-gradient(#405569, #242e37);
+  background-repeat: no-repeat;
+  background-position: bottom, center;
   height: 800px;
 }
-.get-app img {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%)
+.get-app a {
+  padding-right: 20px;
 }
 
+/* social banner */
 .social-banner {
   margin: 40px 0;
   background-image: url(../img/social-banner.jpg);
@@ -220,7 +212,12 @@ ol, ul {
   height: 420px;
   padding-top: 110px;
 }
-
+.social-banner .inline-list {
+  padding-top: 10px;
+}
+.social-banner .inline-list > li {
+  padding-right: 20px;
+}
 .family {
   width: 450px;
   height: 200px;
@@ -228,21 +225,54 @@ ol, ul {
   background-color: #FFF;
   padding-top: 50px;
 }
+
+/* FOOTER */
+/* GENERALE */
 .piede {
   background-color: #000;
+  padding: 100px;
+  color: #FFF;
+  font-size: .7em;
 }
-.social-banner .inline-list {
-  padding-top: 10px;
+.piede .col {
+  width: calc(100% / 4);
 }
 
-.social-banner .inline-list > li {
-  padding-right: 20px;
+/* fotter superiore */
+.piede .logo {
+  width: 118px;
 }
-
-
-
-
-
+.nav h5 {
+  padding-bottom: 20px;
+}
+.nav ul > li {
+  padding-bottom: 15px;
+  color: #A2AEC6;
+}
+/* footer centrale */
+.piede hr {
+  color: #1a1a1a;
+}
+.piede hr:first-of-type {
+  margin: 350px 0 32px 0;
+}
+.piede hr:last-of-type {
+  margin: 90px 0 32px 0;
+}
+.col.social ul > li {
+  padding-left: 20px;
+ }
+/* footer inferiore */
+.piede .app img {
+  width: 104px;
+  margin: 10px;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+}
+.piede .app {
+  margin: auto;
+  max-width: 300px;
+}
 
 
 
