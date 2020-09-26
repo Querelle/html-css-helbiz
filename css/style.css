@@ -56,6 +56,9 @@ ol, ul {
 
 /* HEADER */
 /* navigation bar */
+.testa {
+  margin-bottom: 80px;
+}
 .testa .centratore {
   padding: 25px 0;
   font-size: .5em;
